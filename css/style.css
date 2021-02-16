@@ -11,6 +11,8 @@
   background-color: transparent;
 }
 
+
+
 nav{
   height: 70px;
   display: flex;
@@ -27,7 +29,6 @@ nav{
 }
 
 .nav_element{
-  list-style: none;
   margin: 0;
 }
 
@@ -39,6 +40,26 @@ nav{
   display: none;
 }
 
+#loghi_brand{
+  background-color: #f3f5f9;
+}
+
+.loghi_brand_cont{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loghi_brand_box{
+  width: calc((100% / 6) - 5px);
+  padding: 10px;
+}
+
+.loghi_brand_box img{
+  width: 100%;
+}
+
 @media screen and (max-width: 992px){
   .hamburger{
     display: block;
@@ -46,5 +67,15 @@ nav{
 
   .nav_element{
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .loghi_brand_cont{
+    flex-wrap: wrap;
+  }
+
+  .loghi_brand_box{
+    width: 50%;
   }
 }
