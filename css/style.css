@@ -117,6 +117,19 @@ header nav{
   width: 100%;
 }
 
+#section_prova{
+  background-color: #baffc9;
+}
+
+.prova_box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prova_box div{
+  width: calc(100% /3);
+}
+
 @media screen and (max-width: 992px){
   .hamburger{
     display: block;
@@ -124,6 +137,19 @@ header nav{
 
   .nav_element{
     display: none;
+  }
+
+  .prova_box{
+    justify-content: center;
+  }
+
+  .prova_box div{
+    width: 50%;
+  }
+
+  .prova_box .box_2{
+    order: 1;
+    flex-basis: 70%;
   }
 }
 
@@ -153,5 +179,18 @@ header nav{
   .config_block div{
     width: 100%;
     margin: 0 10px 10px 0;
+  }
+
+  .prova_box div{
+    width: 100%;
+  }
+
+  .prova_box .box_2{
+    order: 1;
+    flex-basis: 100%;
+  }
+
+  .prova_box .box_3{
+    order: -1;
   }
 }
