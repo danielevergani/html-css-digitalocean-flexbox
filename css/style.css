@@ -1,3 +1,50 @@
-body{
-  background-color: black;
+.login_button{
+  color: blue;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.hamburger button{
+  border: none;
+  background-color: transparent;
+}
+
+nav{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  height: 50%;
+}
+
+.logo img{
+  height: 100%;
+}
+
+.nav_element{
+  list-style: none;
+  margin: 0;
+}
+
+.nav_element a{
+  color: inherit;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width: 992px){
+  .hamburger{
+    display: block;
+  }
+
+  .nav_element{
+    display: none;
+  }
 }
